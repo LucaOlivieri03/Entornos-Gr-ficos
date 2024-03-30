@@ -1,0 +1,67 @@
+<!-- 2) -->
+<!-- a) -->
+
+<!-- Código controlado el día 12/08/2009 -->
+
+<!-- La línea de arriba es un comentario que se cierra en dicha línea. No es vista por el navegador -->
+
+<!-- b) -->
+
+<div id="bloque1">Contenido del bloque1</div>
+
+<!-- El div es una etiqueta normalmente usada para encerrar otras etiquetas bajo si mismo. Usado comunmente para aplicar ciertos estilos entre sus elementos. id="bloque1" nos permite asignarle un identificador, que servirá para estilizarlo en un archivo css o para poder trabajar con él en JavaScript. Este atributo no es obligatorio. Finalmente, el resultado en pantalla, es el texto ubicado dentro suyo, mostrando "Contenido del bloque1" -->
+
+<!-- c) -->
+
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+
+<!-- img se utiliza para cargar una imagen. La etiqueta muestra una imagen no cargada junto al texto "lugar imagen". src="" es obligatorio y es la dirección de la imagen a mostrar (en este caso la dirección es naturalmente inválida). alt="lugar imagen" es por si esta no carga, mostrar un mensaje en su lugar (en este caso lugar imagen). id="im1" (no obligatorio) al igual que el caso anterior, es para identificar ya sea para estilizar o para scripts. name="im1" (no obligatorio) actúa igual que id. width="32" height="32" (no obligatorio) es para el tamaño de la imagen. longdesc="detalles.htm" se utiliza para lectores de pantalla, proporcionando un medio con el que informar al mismo sobre la imagen en cuestion. En este caso, redirigir ía a detalles.htm, el cual no es válido al estar mal escrito (no obligatorio) -->
+
+<!-- d) -->
+
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+<!-- meta se utiliza para información para el navegador que no se es visible para el lector. En este caso, name="keywords" (no obligatoria), proporciona las palabras claves con las que alimentar el motor de búsqueda, las cuales están escritas en el atributo content. lang="es" proporciona el lenguaje (no obligatoria), en este caso español. En la segunda etiqueta, http-equiv="expires" (no obligatoria), proporciona información al encabezado http, en este caso cuándo expira la información guardada en la cache del navegador. La fecha es brindada por el atributo content, en este caso 16 de septiembre del 2019 a las 7:49PM (no obligatoria)
+Cabe aclarar que si bien ninguna de estas etiquetas el realmente obligatoria, su ausencia es una mala práctica, ya que proporciona información vital al navegador y al motor de búsqueda.-->
+
+<!-- e) -->
+
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+
+<!-- La etiqueta a se utiliza para hipervínculos. href es la dirección a la que redirigir (obligatoria), en este caso, una página html en la web. type es el tipo de archivo al que redirige (en este caso un html) (no obligatorio). hreflang (no obligatoria), indica el lenguaje de la página en cuestión (no obligatorio). charset indica el tipo de codificación de caracteres que tendrá que emplear el navegador en la página en cuestión (no obligatoria, normlamente se incluye en una etiqueta meta en el <head>). rel se usa para especificar la relación entre el documento actual y el archvio al que se enlaza (no obligatorio). Finalmente, se muestra en pantalla Resumen HTML en forma de hipervínculo. Al clickear en el, nos redirige a la página en el href, en este caso, http://www.e-style.com.ar/resumen.html-->
+
+<!-- f) -->
+
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+    <caption align="top"> Título </caption>
+    <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">A</th>
+    <th scope="col">B</th>
+    <th scope="col">C</th>
+    </tr>
+    <tr>
+    <th scope="row">1º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <th scope="row">2º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    </table>
+
+<!-- table se utiliza para crear una tabla. width proporciona el tamaño de la tabla (no obligatorio). summary una breve descripción (no obligatorio).
+caption se utiliza para proprocionar título (en este caso título). align se utiliza para alinear el título (no obligatorio). tr es una fila. th con es cada columna de dicha fila. scope (no obligatorio) verifica de qué es encabezado, col es de columna, row de fila. td es una celda de datos de la tabla, &nbsp significa espacio vacío no rompible. Finalmente, muestra una tabla con 2 filas (1°, 2°) y 3 columnas (A B C) con título "Título".-->
+
+
+
+
+
+

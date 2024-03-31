@@ -1,0 +1,284 @@
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+<!-- 
+1) Nos redirige a Google en la misma pestaña
+2) Nos redirige a Google creando otra pestaña
+3) Nos redirigiría a Google (si se pudiese clickear ya que no tiene texto), indicándole datos adicionales que no son relevantes para el sitio al que queremos acceder ya que los tiene previamente incorporados.
+4) Nos lleva arriba del archivo (aunque no es perceptible debido al tamaño del documento).
+5) Igual que el 5. Al no detectar adónde nos debe llevar, por deafult el navegador (al menos Chrome) nos lleva arriba del todo.
+6) Es identificable, sin embargo no cumple ninguna función, no solo por no poseer texto, sino por no poseer atributo href. De hecho ni siquiera es un hipervínculo (si le colocamos texto no sale en azul y no es clickeable).
+-->
+
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p>
+
+<!-- 
+1) El hipervínculo está en el texto "click aquí".
+2) El hipervínculo está en la imágen.
+3) El hipervínculo está en ambos.
+4) El hipervínculo está en ambos, aunque usando dos etiqutas en lugar de uno. Esto podría permitir usar links distintos para ambos. 
+-->
+
+<ul>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ul>
+
+
+<ol>
+    <li>xxx</li>
+    <li>yyy</li>
+    <li>zzz</li>
+</ol>
+
+
+<ol>
+    <li>xxx</li>
+</ol>
+<ol>
+    <li value="2">yyy</li>
+</ol>
+<ol>
+    <li
+    value="3">zzz</li>
+</ol>
+
+
+<blockquote>
+    <p>1. xxx<br />
+    2. yyy<br />
+    3. zzz</p>
+</blockquote>
+
+<!-- 
+1) Lista desordenada, muestra los elementos con puntos.
+2) Lista ordenada, los enumera.
+3) Conjunto de listas cuyos elementos tienen especificados el valor que ocupan en la misma, simulando el item 2. Notar que al hacerlo así se dejan espacios entre las tablas.
+4) Cita de parrafos con sangría inicial, simulando una tabla ordenada.
+-->
+
+<table border="1" width="300">
+    <tr>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+    </tr>
+    <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+    </tr>
+    <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+    </tr>
+</table>
+
+<table border="1" width="300">
+    <tr>
+    <td><div align="center"><strong>Columna 1</strong></div></td>
+    <td><div align="center"><strong>Columna 2</strong></div></td>
+    </tr>
+    <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+    </tr>
+    <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+    </tr>
+</table>
+
+<!-- 
+No se ven diferencias apreciables visualmente. En cuanto a su codificación, en la primera se utilizan las herramientas nativas que proveen las etiquetas de la tabla, en cuanto a sus formas de representar la tipografía y las alineaciones. En el segundo, al no usar th, se compensa usando un div que las alinea al centro y strong para remarcarlas. 
+-->
+
+<table width="200">
+    <caption>
+        Título
+    </caption>
+    <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">
+    &nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>  
+
+<table width="200">
+    <tr>
+    <td colspan="3"><div
+        align="center">Título</div></td>
+        </tr>
+        <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+<!-- Visualmente no hay diferencias apreciables, sin embargo si las hay en su codificación. Igual que en el caso anterior, el 2do utiliza un div y sus atributos para simular caption. Además, colspan permite fusionar las columnas, permitiendo que la primera no quede más grande, debido a que ahí es donde iría "Título", creando una sola donde ubicarlo mejor. Finalmente, con el div align center, lo ubica en el medio.-->
+
+<table width="200">
+    <tr>
+    <td colspan="3"><div
+    align="center">Título</div></td>
+    </tr>
+    <tr>
+    <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+
+<table width="200">
+    <tr>
+    <td colspan="3"><div
+    align="center">Título</div></td>
+    </tr>
+    <tr>
+    <td colspan="2"
+    bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+<!-- El 1ero une las filas, el 2do las columnas, nada más.-->
+
+<table width="200" border="1">
+    <tr>
+    <td colspan="3"><div
+    align="center">Título</div></td>
+    </tr>
+    <tr>
+    <td colspan="2"rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+    <tr>
+    <td colspan="2"><div
+    align="center">Título</div></td>
+    </tr>
+    <tr>
+    <td rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td width="50%">&nbsp;</td>
+    </tr>
+</table>
+
+<!-- La diferencia radica en que el segundo tiene el espaciado de sus márgenes eliminado, y también tiene eliminado el espaciado entre celdas.-->
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+    <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+    Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+    </fieldset>
+    <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+    LOGIN<br />
+    <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+    <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+    <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype="text/plain" method="post" target="_blank">
+    <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu3" name="usu3" /><br />
+    Clave: <input type="password" id="clave3" name="clave3" />
+    </fieldset>
+    <input type="reset" id="boton3" name="boton3" value=
+    "Enviar" />
+</form>
+
+<!-- 
+1) Método post (no usa la url para transmitir datos), intenta abrir procesar.php en una página nueva. Contiene los datos en una misma casilla. El botón los envía. Ya tiene valores preestablecidos en los campos.
+2) No realiza acción. Los datos se envían a través de la url (get). El botón envía los datos. No contiene un recuadro con todos los datos dentro. Abre página nueva.
+3) Método post. La acción abre mail por default del usuario con la dirección escrita. El botón NO envía, sino que reinicia el formulario. Los datos están codificados por enctype "text/plain".
+-->
+
+<label>Botón 1
+    <button type="button" name="boton1" id="boton1">
+    <img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+    <b>CLICK AQUÍ</b></button></label>
+
+<label>Botón 2
+    <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+    </label>
+
+<!-- 
+1) Es un botón que por default no cumple ninguna función pero tiene la ventaja de permitir contenido dentro suyo. En este caso tenemos una imagen y texto en negrita. Además es tamaño es fácilmente ajustable con atributos width y height en HTML.
+2) Es un tipo de input, más propenso a usarse en formularios debido a su fácil acceso a funciones dentro de este. Sin embargo no permite contenido dentro suyo. En este caso, no posee ni la imagen ni el texto en negrita.
+-->
+
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+    <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+    <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+<!-- La única diferencia es el cambio en los names, que sirve para identificar la etiqueta.-->
+
+<select name="lista">
+    <optgroup label="Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+    </optgroup>
+    <optgroup label="Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+    </optgroup>
+</select>
+
+<select name="lista[]" multiple="multiple">
+    <optgroup label=" Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+    </optgroup>
+    <optgroup label=" Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+    </optgroup>
+</select>
+
+<!-- La diferencia es que multiple te permite elegir más de una opción. -->
+

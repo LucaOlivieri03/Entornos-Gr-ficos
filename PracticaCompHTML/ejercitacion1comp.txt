@@ -1,0 +1,11 @@
+1. ¿Ventajas de HTML5?
+
+*Es gratuito,no se necesita ningún tipo de programa especial para empezar a programar en HTML5, incluso puede hacerlo en un bloc de notas, guar dar el documento como HTML y visualizarlo desde cualquier navegador.
+*Código más ordenado: Debido a nuevas etiquetas que ayudan a nombrar partes de la estructura básica de la página web , así como la eliminación de ciertas etiquetas, el código HTML se puede separar fácilmente entre etiquetas y contenido, permitiendo así que el desarrollador pueda trabajar de manera más efectiva y detectar errores de manera más rápida. Las etiquetas son claras y descriptivas, de modo que el desarrollador puede comenzar a codificar sin ningún problema. 
+*Compatibilidad en navegadores: Los navegadores modernos y populares soportan HTML5. Solo los navegadores antiguos pueden traer problemas ya que pueden no tener todas las funciones y etiquetas de HTML5 disponibles.
+*Almacenamiento mejorado: HTML5 cuenta con almacenamiento local que dice ser "mejor que las cookies" ya que la informacion nunca se transfiere al servidor y,de esta manera, se mantiene segura. Permite que la información se mantenga almacenada incluso después de haber cerrado el navegador y como funciona desde el lado de cliente, la información se mantiene a salvo incluso si el usuario decide borrar sus cookies.
+*Diseño adaptativo: HTML5 es compatible con los navegadores móviles, de modo que cada página realizada en HTML5 que se ve en ordenadores, también se puede adaptar a los dispositivos móviles. Esta especificación para móviles puede hacerla desde el mismo documento HTML o puede emplear una framework especializada para mejorar tu productividad.
+
+2. ¿Por qué utilizarlo?
+Para definir la estructura básica de una página web, con la novedad de poder añadir audio y video sin necesidad de usar flash o reproductor multimediar, lo que puede ayudar a disminuir al tamaño del archivo final de la página.
+3. Nombre ventajas

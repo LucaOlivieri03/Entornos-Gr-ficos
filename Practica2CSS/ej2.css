@@ -1,0 +1,21 @@
+/*Ejercicio 2
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.*/
+p#normal {                                /*Modifica el estilo del parrafo con id="normal*/
+font-family: arial,helvetica;             /*Define el tipo de letra a utilizar, la primera opcion es arial, si esta no funciona se aplica helvetica*/
+font-size: 11px;                          /*Define el tamaño de la letra en pixeles*/
+font-weight: bold;                        /*Especifica el peso o grueso de la letra, el valor "bold" pone el texto en negrita.*/
+}
+*#destacado {                             /*El asterisco se utiliza para aplicar estilos a todos los elementos dentro del elemento con el id "destacado".*/
+border-style: solid;                      /*Define el estilo del borde, en este caso "solid" define una linea entera.*/
+border-color: blue;                     /*Define el color del borde, en este caso "blue", azul.*/
+border-width: 2px;                        /*Establece el grosor de las líneas del borde, en este caso 2 pixeles*/ 
+}
+#distinto {                               /*Le aplica estilos al elemento con id="distinto"*/ 
+background-color: #9EC7EB;              /*Establece un color de fondo en sistema hexadecimal*/ 
+color: red;                             /*Establece un color de letra "red", rojo.*/ 
+}
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>

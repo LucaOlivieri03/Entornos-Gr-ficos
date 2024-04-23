@@ -1,0 +1,67 @@
+Ejercicio 1: Responder
+
+1. ¿ Qué es CSS y para qué se usa?
+
+CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada. Es una tecnología que nos permite controlar la apariencia de una
+página web.
+CSS describe como los elementos dispuestos en la página son presentados al usuario. Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar donde disponer texto e imágenes en la página.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+Las hojas de estilo están compuestas por una o más de esas reglas aplicadas a un documento HTML o XML. La regla tiene dos partes: un selector y la declaración. A su vez la declaración está compuesta por una propiedad y el valor que se le asigne. 
+El selector funciona como enlace entre el documento y el estilo, especificando los elementos que se van a ver afectados por esa declaración.
+La declaración es la parte de la regla que establece cuál será el efecto.
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+
+Las tres formas más conocidas de dar estilo a un documento son las siguientes:
+    *Utilizando una hoja de estilo externa que estará vinculada a un documento a través del elemento <link>, el cual debe ir situado en la sección <head>.
+    * Utilizando el elemento <style>, en el interior del documento al que se le quiere dar estilo, y que generalmente se situaría en la sección <head>. De esta forma los estilos serán reconocidos antes de que la página se cargue por completo.
+    * Utilizando estilos directamente sobre aquellos elementos que lo permiten  através del atributo <style> dentro de <body>. Pero este tipo de estilo pierde las ventajas que ofrecen las hojas de estilo al mezclarse el contenido con la presentación.
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+
+Selectores de tipo: Aplica estilos a todos los elementos de un tipo específico. 
+Por ejemplo <h2> aplica estilo a todos los subtitulos de la pagina web
+h2 {
+    /* estilos */
+}
+Selector de clase: Aplica estilos a elementos que tienen una clase específica. Se denota con un punto seguido del nombre de la clase.
+Por ejemplo:
+.clase {
+    /* estilos */
+}
+Selector de ID: Aplica estilos a un único elemento con un ID específico. Se denota con un signo de numeral (#) seguido del nombre del ID.
+Por ejemplo:
+#mi-id {
+    /* estilos */
+}
+Selector de atributo: Aplica estilos a elementos que tienen un atributo específico. Se denota con corchetes y el nombre del atributo opcionalmente seguido de un valor.
+Por ejemplo:
+input[type="text"] {
+    /* estilos */
+}
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+Una pseudo-clase en CSS es una palabra clave que se añade a un selector y que especifica un estado especial del elemento seleccionado. Estos estados pueden ser dinámicos y cambiar en respuesta a interacciones del usuario o al estado del documento.
+Las pseudo-clases más utilizadas aplicadas a vínculos (<a> en HTML) son:
+
+:hover: Se aplica cuando el cursor está sobre el elemento.
+:visited: Se aplica a los vínculos visitados.
+:active: Se aplica cuando el vínculo está siendo activado, por ejemplo, cuando se hace clic sobre él.
+:focus: Se aplica cuando el elemento recibe el foco de atención, por ejemplo, al ser seleccionado mediante el teclado o un dispositivo de apuntado.
+:link: Se aplica a los vínculos no visitados.
+
+6. ¿ Qué es la herencia?
+
+La herencia en CSS es un mecanismo que permite a los elementos hijos heredar ciertas propiedades de sus elementos padres. Esto significa que un elemento hijo puede automáticamente adoptar los estilos definidos en su elemento padre, a menos que se especifique lo contrario.
+Por ejemplo, si se define un estilo al body de la pagina, todos los elementos de la página tendrán las mismas propiedades.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+El proceso denominado "cascada" en CSS se refiere al conjunto de reglas que determinan cómo se aplican y combinan los estilos a los elementos HTML. Este proceso consta de varias fases que definen la prioridad y la especificidad de las reglas de estilo, y cómo se resuelven los conflictos cuando hay múltiples reglas que se aplican al mismo elemento.
+El proceso de cascada se puede dividir en tres fases principales:
+1.Especificidad: En esta fase, se determina qué regla es más específica para un elemento en particular. 
+2.Importancia: Algunas reglas de estilo pueden tener una importancia especial que las hace sobresalir sobre otras reglas, incluso si son menos específicas. Esto se puede lograr mediante el uso de la propiedad !important en CSS.
+3.Orden de aparición: Si dos reglas tienen la misma especificidad y la misma importancia, se aplica la regla que aparece más tarde en el archivo CSS. 

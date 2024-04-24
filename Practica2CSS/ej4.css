@@ -1,0 +1,44 @@
+/*
+Ejercicio 4
+Dadas las siguientes declaraciones:
+*/
+* {color:green; }                                                   /*EL COLOR DE LETRA PREDETERMINADO SE FIJA EN VERDE*/
+a:link {color:gray }
+a:visited{color:blue }
+a:hover {color:fuchsia }
+a:active {color:red }
+p {font-family: arial,helvetica;font-size: 10px;color:black; }
+.contenido{font-size: 14px;font-weight: bold; }
+/* Analizar los siguientes códigos y comparar sus efectos. Explicar: */
+
+/*
+<body>           
+<p class="contenido" style="font-weight: normal;">               SE LE VA A APLICAR PRIMERO EL ESTILO DE LA CLASE CONTENIDO, TAMAÑO DE FUENTE DE 14 PIXELES, Y LETRA NEGRITA
+Este es un texto ...............</p>                             TAMBIÉN SE APLICARÁ EL ESTILO DEL ELEMENTO p EL ESTILO DE LETRA PRIMERO ARIAL Y SI NO FUNCIONA HELVÉTICA Y COLOR DE LETRA NEGRO
+<table>                                                          COMO EL SELECTOR DE CLASE TIENE MAYOR ESPECIFICAD QUE EL DE PÁRRAFO, SE USA EL TAMAÑO DE LETRA DE ÉSTE.
+<tr>
+<td>Y esta es una tabla.......</td>     
+</tr>
+<tr>                                                 /---------------------------------------------------------------------------------------------------------------------/
+<td><a href="http://www.google.com.ar">con un        /  EL TEXTO "con un enlace" que va a dirigir a un sitio web externo será de color gris mientras no haya sido visitado,/
+enlace</a></td>                                      /   su color cambiará a azul si fue visitado; si se pasa el cursor por encima del texto, su color cambiará a fucsia;  /
+</tr>                                                /  y si se clickea el color cambiará a rojo.                                                                          /
+</table>                                             /---------------------------------------------------------------------------------------------------------------------/
+</body>
+*/
+
+
+/*
+<body class="contenido">                            SE APLICARÁ EL ESTILO DE LA CLASE CONTENIDO A TODO LO INCLUIDO DENTRO DEL BODY, TAMAÑO DE FUENTE DE 14 PIXELES, Y LETRA NEGRITA.
+<p> Este es un texto................</p>            TAMBIÉN SE APLICARÁ EL ESTILO DEL ELEMENTO p EL ESTILO DE LETRA PRIMERO ARIAL Y SI NO FUNCIONA HELVÉTICA; COLOR DE LETRA NEGRO Y TAMAÑO DE FUENTE 10 PIXELES.
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con      /---------------------------------------------------------------------------------------------------------------------------------/
+un enlace</a></td>                              / EL TEXTO "con un enlace" que va a dirigir a un sitio web externo será de color gris mientras no haya sido visitado, su color    /
+</tr>                                           / cambiaráa azul si fue visitado; si se pasa el cursor por encima del texto, su color cambiará a fucsia; y si se clickea el color /
+</table>                                        / cambiará a rojo. los colores serán aplicados debido a que el selector tiene mayor especifidad que el selector de clase.         /
+</body>                                         /---------------------------------------------------------------------------------------------------------------------------------/
+*/                                                    

@@ -23,11 +23,41 @@ La función mysqli_query () se utiliza para
 ejecutar una consulta a la base de datos que especifiquemos.
 
 y requiere como parámetros
-………………………………………………………………………………………….
+mysqli_query($nombreConexion, "Consulta aquí"); ó
+mysqli_query($nombreConexion, $query);
+"Consulta aquí" se refiere a una consulta
+realizada utilizando el lenguaje SQL de consultas
+a bases de datos. 
+
 La cláusula or die() se utiliza para
-………………………………………………..........................................................
+manejar errores durante la ejecución de consultas a la base de datos. Esta cláusula es parte del código PHP y no de MySQL en sí, y 
+su función es detener la ejecución del script si se produce un error en la consulta y mostrar un mensaje de error específico.
+
 y la función mysqli_error () se puede usar para
-…………………………………………………………………………………………
+Devolver el último mensaje de error para la llamada más
+reciente a una función de MySQLi que puede haberse
+ejecutado correctamente o haber fallado.
+
 Si la función mysqli_query() es exitosa, el conjunto resultante retornado se almacena en una variable, por ejemplo
 $vResult, y a continuación se puede ejecutar el siguiente código (explicarlo)
+
 -->
+
+<?php
+        /*
+        while ($fila = mysqli_fetch_array($vResultado))  Transforma la información devuelta por la base de datos en un array
+        {
+        ?>
+        <tr>
+        <td><?php echo ($fila[0]); ?></td>               Muestra la información del array que contiene la base de datos 
+        <td><?php echo ($fila[1]); ?></td>                                            ||
+        <td><?php echo ($fila[2']); ?></td>                                           ||
+        </tr>
+        <tr>
+        <td colspan="5">
+        <?php
+        }
+        mysqli_free_result($vResultado);                 Libera la memoria asociada con el resultado de una consulta MySQL                                      
+        mysqli_close($link);                             Cierra la conexión con la base de datos
+        */
+?>

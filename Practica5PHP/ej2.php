@@ -46,19 +46,19 @@ $mail = new PHPMailer(true);
             $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $mail->Username   = 'pruebasentornos00@gmail.com';                     //SMTP username
-            $mail->Password   = '';                               //SMTP password
+            $mail->Password   = '';                               //SMTP password (incompleta por razones de seguridad en github)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
             $mail->setFrom('pruebasentornos00@gmail.com', 'Pruebas Entornos');
-            $mail->addAddress('ignaciolurati2@gmail.com', 'Nacho');     //Add a recipient
+            $mail->addAddress('pruebasentornos00@gmail.com', 'Consulta');     //Add a recipient
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Prueba de envio de mail';
-            $mail->Body    = '<h1>Envío de mail</h1> <b>Prueba de envío de mails mediante un php utilizando PHPMailer</b>';
-            $mail->AltBody = 'Envio de mail por si no tenes html';
+            $mail->Subject = $_POST['email'];
+            $mail->Body    = '<h1>Consulta</h1> <b>'.$_POST['consulta'].'</b>';
+            $mail->AltBody = 'Consulta de ' . $_POST['email'].':'.$_POST['consulta'];
 
             $mail->send();
             echo 'El mensaje fue enviado';

@@ -3,15 +3,10 @@
 <head>
     <?php 
 
-    if(isset($_POST['borrarcookie'])){
-        setcookie("noticia",'',time()-100);
-        $seguro = true;
-    }
-    
     if(isset($_POST['boton'])){
        $noticia = $_POST['noticia'];
        setcookie("noticia", $_POST['noticia'], time() + 60 * 60 * 24 * 150);
-    } else if (isset($_COOKIE['noticia']) && !isset($seguro)){
+    } else if (isset($_COOKIE['noticia'])){
         $noticia = $_COOKIE['noticia'];
     } 
     
@@ -86,10 +81,8 @@
 
    </section>
 
-   <form method="post">
-        <button type="submit" name="borrarcookie">BORRAR PREFERENCIA</button>
-   </form>
 
+    <a href="borrarcookie.php">BORRAR PREFERENCIA</a>
 </body>
 </html>
 
